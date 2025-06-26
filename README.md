@@ -10,4 +10,17 @@ c. IP Address of the Client
 The implementation uses a dependency on MySQL Connector library to connect to the database.
 https://github.com/anhstudios/mysql-connector-cpp
 
+**#Future roadmaps:**
+
+ - Provide separate config file for the user to update the Database configuration.
+ - use inotify to notify the update of the LOG_FILE to improve performance and CPU load.
+
+**#Unittest procedure**
+Below usecases shall be verified:
+- Successful SSH login (valid user)
+- Failed SSH login (invalid user)
+- Failed SSH login (valid user)
+- Irrelevant log line (should not match)
+- Time, username, IP correctness
+
 
