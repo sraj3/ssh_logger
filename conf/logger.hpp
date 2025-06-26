@@ -4,5 +4,8 @@
 #define DB_PASSWORD "db_password"
 #define DB_NAME "ssh_logger"
 
-//log file
-#define LOG_FILE "/var/log/auth.log"
+//log file for ubuntu
+#define UBUNTU_LOG_FILE "/var/log/auth.log"
+
+//log file for cent, RHEL
+#define LOG_FILE "/var/log/secure"
